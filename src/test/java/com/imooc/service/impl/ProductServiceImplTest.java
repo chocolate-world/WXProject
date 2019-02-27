@@ -49,14 +49,14 @@ public class ProductServiceImplTest {
     @Test
     public void save() {
         ProductInfo productInfo = new ProductInfo();
-        productInfo.setProductId("123457");
-        productInfo.setProductName("皮皮虾");
-        productInfo.setProductPrice(new BigDecimal(3.2));
-        productInfo.setProductStock(100);
-        productInfo.setProductDescription("很好吃的虾");
-        productInfo.setProductIcon("http://xxxxx.jpg");
+        productInfo.setProductId("1234568");
+        productInfo.setProductName("芒果冰");
+        productInfo.setProductPrice(new BigDecimal(20));
+        productInfo.setProductStock(200);
+        productInfo.setProductDescription("冰冰的很好吃");
+        productInfo.setProductIcon("http://xxxx.jpg");
         productInfo.setProductStatus(ProductStatusEnum.DOWN.getCode());
-        productInfo.setProductType(2);
+        productInfo.setCategoryType(2);
 
         ProductInfo result = productService.save(productInfo);
         Assert.assertNotNull(result);
